@@ -1,0 +1,10 @@
+procedure for adding dynamic tables  in finalbuild .py as example
+
+from dynamictable import create_dynamic_table
+
+def build_book(story, styles):
+    add_cover(story, styles)
+    add_curve(story, styles)
+    # ... your other chapters ...
+    create_dynamic_table(story, styles)  # <--- Add your new table page here!
+    add_wisdom(story, styles)
